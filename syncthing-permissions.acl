@@ -1,0 +1,189 @@
+# file: .
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::---
+
+# file: .bash_logout
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::---
+other::---
+
+# file: .profile
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: .bashrc
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: .bash_history
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: .config
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::---
+
+# file: .config/syncthing
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::---
+
+# file: .config/syncthing/cert.pem
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::---
+
+# file: .config/syncthing/key.pem
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::---
+
+# file: .config/syncthing/index
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::---
+
+# file: .config/syncthing/index/LOCK
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::---
+
+# file: .config/syncthing/index/LOG
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::---
+
+# file: .config/syncthing/index/000012.log
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::---
+
+# file: .config/syncthing/index/MANIFEST-000013
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::---
+
+# file: .config/syncthing/index/CURRENT
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::---
+
+# file: .config/syncthing/index/LOG.old
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::---
+
+# file: .config/syncthing/config.xml
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::---
+
+# file: .config/syncthing/https-cert.pem
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::---
+
+# file: .config/syncthing/https-key.pem
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::---
+
+# file: .config/syncthing/csrftokens.txt
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::---
+
+# file: Sync
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::---
+
+# file: Sync/.stfolder
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::---
+
+# file: Sync/.stversions
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::---
+
+# file: .viminfo
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: permissions.acl
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: .gitconfig
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: .gitrc
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
