@@ -152,315 +152,469 @@ user::rw-
 group::r--
 other::r--
 
-# file: .git
+# file: bash
 # owner: root
 # group: root
 user::rwx
 group::r-x
 other::r-x
 
-# file: .git/refs
+# file: bash/.git
 # owner: root
 # group: root
 user::rwx
 group::r-x
 other::r-x
 
-# file: .git/refs/heads
+# file: bash/.git/refs
 # owner: root
 # group: root
 user::rwx
 group::r-x
 other::r-x
 
-# file: .git/refs/heads/master
+# file: bash/.git/refs/heads
+# owner: root
+# group: root
+user::rwx
+group::r-x
+other::r-x
+
+# file: bash/.git/refs/heads/master
 # owner: root
 # group: root
 user::rw-
 group::r--
 other::r--
 
-# file: .git/refs/tags
+# file: bash/.git/refs/tags
 # owner: root
 # group: root
 user::rwx
 group::r-x
 other::r-x
 
-# file: .git/refs/remotes
+# file: bash/.git/refs/remotes
 # owner: root
 # group: root
 user::rwx
 group::r-x
 other::r-x
 
-# file: .git/refs/remotes/upstream
+# file: bash/.git/refs/remotes/origin
 # owner: root
 # group: root
 user::rwx
 group::r-x
 other::r-x
 
-# file: .git/refs/remotes/upstream/master
+# file: bash/.git/refs/remotes/origin/HEAD
 # owner: root
 # group: root
 user::rw-
 group::r--
 other::r--
 
-# file: .git/description
+# file: bash/.git/refs/remotes/origin/master
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
+# file: bash/.git/description
 # owner: root
 # group: root
 user::rwx
 group::r-x
 other::r-x
 
-# file: .git/branches
+# file: bash/.git/branches
 # owner: root
 # group: root
 user::rwx
 group::r-x
 other::r-x
 
-# file: .git/info
+# file: bash/.git/info
 # owner: root
 # group: root
 user::rwx
 group::r-x
 other::r-x
 
-# file: .git/info/exclude
+# file: bash/.git/info/exclude
 # owner: root
 # group: root
 user::rwx
 group::r-x
 other::r-x
 
-# file: .git/hooks
+# file: bash/.git/hooks
 # owner: root
 # group: root
 user::rwx
 group::r-x
 other::r-x
 
-# file: .git/hooks/pre-applypatch.sample
+# file: bash/.git/hooks/pre-applypatch.sample
 # owner: root
 # group: root
 user::rwx
 group::r-x
 other::r-x
 
-# file: .git/hooks/prepare-commit-msg.sample
+# file: bash/.git/hooks/prepare-commit-msg.sample
 # owner: root
 # group: root
 user::rwx
 group::r-x
 other::r-x
 
-# file: .git/hooks/commit-msg.sample
+# file: bash/.git/hooks/commit-msg.sample
 # owner: root
 # group: root
 user::rwx
 group::r-x
 other::r-x
 
-# file: .git/hooks/pre-commit.sample
+# file: bash/.git/hooks/pre-commit.sample
 # owner: root
 # group: root
 user::rwx
 group::r-x
 other::r-x
 
-# file: .git/hooks/applypatch-msg.sample
+# file: bash/.git/hooks/applypatch-msg.sample
 # owner: root
 # group: root
 user::rwx
 group::r-x
 other::r-x
 
-# file: .git/hooks/update.sample
+# file: bash/.git/hooks/update.sample
 # owner: root
 # group: root
 user::rwx
 group::r-x
 other::r-x
 
-# file: .git/hooks/pre-rebase.sample
+# file: bash/.git/hooks/pre-rebase.sample
 # owner: root
 # group: root
 user::rwx
 group::r-x
 other::r-x
 
-# file: .git/hooks/post-update.sample
+# file: bash/.git/hooks/post-update.sample
 # owner: root
 # group: root
 user::rwx
 group::r-x
 other::r-x
 
-# file: .git/objects
+# file: bash/.git/objects
 # owner: root
 # group: root
 user::rwx
 group::r-x
 other::r-x
 
-# file: .git/objects/pack
+# file: bash/.git/objects/pack
 # owner: root
 # group: root
 user::rwx
 group::r-x
 other::r-x
 
-# file: .git/objects/info
+# file: bash/.git/objects/info
 # owner: root
 # group: root
 user::rwx
 group::r-x
 other::r-x
 
-# file: .git/objects/5e
+# file: bash/.git/objects/5e
 # owner: root
 # group: root
 user::rwx
 group::r-x
 other::r-x
 
-# file: .git/objects/5e/61ef3a1649f879270062a4258a8ec3a64aa2d7
+# file: bash/.git/objects/5e/61ef3a1649f879270062a4258a8ec3a64aa2d7
 # owner: root
 # group: root
 user::r--
 group::r--
 other::r--
 
-# file: .git/objects/f6
+# file: bash/.git/objects/f6
 # owner: root
 # group: root
 user::rwx
 group::r-x
 other::r-x
 
-# file: .git/objects/f6/715011a96fadeaaf77c6c4b795f32fa101139b
+# file: bash/.git/objects/f6/715011a96fadeaaf77c6c4b795f32fa101139b
 # owner: root
 # group: root
 user::r--
 group::r--
 other::r--
 
-# file: .git/objects/fb
+# file: bash/.git/objects/fb
 # owner: root
 # group: root
 user::rwx
 group::r-x
 other::r-x
 
-# file: .git/objects/fb/6d90b9fb43957e7ee3ab734c5393eb96f06e24
+# file: bash/.git/objects/fb/6d90b9fb43957e7ee3ab734c5393eb96f06e24
 # owner: root
 # group: root
 user::r--
 group::r--
 other::r--
 
-# file: .git/objects/9f
+# file: bash/.git/objects/9f
 # owner: root
 # group: root
 user::rwx
 group::r-x
 other::r-x
 
-# file: .git/objects/9f/369b09b26b92936f4780fec9f29cd2247ce925
+# file: bash/.git/objects/9f/369b09b26b92936f4780fec9f29cd2247ce925
 # owner: root
 # group: root
 user::r--
 group::r--
 other::r--
 
-# file: .git/HEAD
-# owner: root
-# group: root
-user::rw-
-group::r--
-other::r--
-
-# file: .git/config
-# owner: root
-# group: root
-user::rw-
-group::r--
-other::r--
-
-# file: .git/FETCH_HEAD
-# owner: root
-# group: root
-user::rw-
-group::r--
-other::r--
-
-# file: .git/logs
+# file: bash/.git/objects/9c
 # owner: root
 # group: root
 user::rwx
 group::r-x
 other::r-x
 
-# file: .git/logs/refs
+# file: bash/.git/objects/9c/ce1d646539e6135c541fcc8c50897355e964b7
+# owner: root
+# group: root
+user::r--
+group::r--
+other::r--
+
+# file: bash/.git/objects/2e
 # owner: root
 # group: root
 user::rwx
 group::r-x
 other::r-x
 
-# file: .git/logs/refs/remotes
+# file: bash/.git/objects/2e/b44b28225701ed3413b44da4afa68be009503b
+# owner: root
+# group: root
+user::r--
+group::r--
+other::r--
+
+# file: bash/.git/objects/a8
 # owner: root
 # group: root
 user::rwx
 group::r-x
 other::r-x
 
-# file: .git/logs/refs/remotes/upstream
+# file: bash/.git/objects/a8/e90a4a0464ab4358a5f16b94bf67f7890d0930
+# owner: root
+# group: root
+user::r--
+group::r--
+other::r--
+
+# file: bash/.git/objects/62
 # owner: root
 # group: root
 user::rwx
 group::r-x
 other::r-x
 
-# file: .git/logs/refs/remotes/upstream/master
+# file: bash/.git/objects/62/a2c614746a2c35e1447b5ef6a9191635a8edf5
 # owner: root
 # group: root
-user::rw-
+user::r--
 group::r--
 other::r--
 
-# file: .git/logs/refs/heads
+# file: bash/.git/objects/99
 # owner: root
 # group: root
 user::rwx
 group::r-x
 other::r-x
 
-# file: .git/logs/refs/heads/master
+# file: bash/.git/objects/99/3da64d22f604a39d922efab523d6c03bb9299d
+# owner: root
+# group: root
+user::r--
+group::r--
+other::r--
+
+# file: bash/.git/HEAD
 # owner: root
 # group: root
 user::rw-
 group::r--
 other::r--
 
-# file: .git/logs/HEAD
+# file: bash/.git/config
 # owner: root
 # group: root
 user::rw-
 group::r--
 other::r--
 
-# file: .git/ORIG_HEAD
+# file: bash/.git/logs
+# owner: root
+# group: root
+user::rwx
+group::r-x
+other::r-x
+
+# file: bash/.git/logs/refs
+# owner: root
+# group: root
+user::rwx
+group::r-x
+other::r-x
+
+# file: bash/.git/logs/refs/remotes
+# owner: root
+# group: root
+user::rwx
+group::r-x
+other::r-x
+
+# file: bash/.git/logs/refs/remotes/origin
+# owner: root
+# group: root
+user::rwx
+group::r-x
+other::r-x
+
+# file: bash/.git/logs/refs/remotes/origin/HEAD
 # owner: root
 # group: root
 user::rw-
 group::r--
 other::r--
 
-# file: .git/index
+# file: bash/.git/logs/refs/remotes/origin/master
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
+# file: bash/.git/logs/refs/heads
+# owner: root
+# group: root
+user::rwx
+group::r-x
+other::r-x
+
+# file: bash/.git/logs/refs/heads/master
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
+# file: bash/.git/logs/HEAD
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
+# file: bash/.git/packed-refs
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
+# file: bash/.git/FETCH_HEAD
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
+# file: bash/.git/index
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
+# file: bash/.git/rebase-apply
+# owner: root
+# group: root
+user::rwx
+group::r-x
+other::r-x
+
+# file: bash/.git/rebase-apply/last
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
+# file: bash/.git/ORIG_HEAD
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
+# file: bash/.git/COMMIT_EDITMSG
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
+# file: bash/LICENSE
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
+# file: bash/README.md
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
+# file: bash/.profile
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
+# file: bash/.bashrc
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
+# file: bash/permissions.acl
 # owner: root
 # group: root
 user::rw-
@@ -894,346 +1048,17 @@ user::rw-
 group::r--
 other::r--
 
-# file: bash
+# file: .git-credential-cache
+# owner: root
+# group: root
+user::rwx
+group::---
+other::---
+
+# file: .git-credential-cache/socket
 # owner: root
 # group: root
 user::rwx
 group::r-x
 other::r-x
-
-# file: bash/.git
-# owner: root
-# group: root
-user::rwx
-group::r-x
-other::r-x
-
-# file: bash/.git/refs
-# owner: root
-# group: root
-user::rwx
-group::r-x
-other::r-x
-
-# file: bash/.git/refs/heads
-# owner: root
-# group: root
-user::rwx
-group::r-x
-other::r-x
-
-# file: bash/.git/refs/heads/master
-# owner: root
-# group: root
-user::rw-
-group::r--
-other::r--
-
-# file: bash/.git/refs/tags
-# owner: root
-# group: root
-user::rwx
-group::r-x
-other::r-x
-
-# file: bash/.git/refs/remotes
-# owner: root
-# group: root
-user::rwx
-group::r-x
-other::r-x
-
-# file: bash/.git/refs/remotes/origin
-# owner: root
-# group: root
-user::rwx
-group::r-x
-other::r-x
-
-# file: bash/.git/refs/remotes/origin/HEAD
-# owner: root
-# group: root
-user::rw-
-group::r--
-other::r--
-
-# file: bash/.git/description
-# owner: root
-# group: root
-user::rwx
-group::r-x
-other::r-x
-
-# file: bash/.git/branches
-# owner: root
-# group: root
-user::rwx
-group::r-x
-other::r-x
-
-# file: bash/.git/info
-# owner: root
-# group: root
-user::rwx
-group::r-x
-other::r-x
-
-# file: bash/.git/info/exclude
-# owner: root
-# group: root
-user::rwx
-group::r-x
-other::r-x
-
-# file: bash/.git/hooks
-# owner: root
-# group: root
-user::rwx
-group::r-x
-other::r-x
-
-# file: bash/.git/hooks/pre-applypatch.sample
-# owner: root
-# group: root
-user::rwx
-group::r-x
-other::r-x
-
-# file: bash/.git/hooks/prepare-commit-msg.sample
-# owner: root
-# group: root
-user::rwx
-group::r-x
-other::r-x
-
-# file: bash/.git/hooks/commit-msg.sample
-# owner: root
-# group: root
-user::rwx
-group::r-x
-other::r-x
-
-# file: bash/.git/hooks/pre-commit.sample
-# owner: root
-# group: root
-user::rwx
-group::r-x
-other::r-x
-
-# file: bash/.git/hooks/applypatch-msg.sample
-# owner: root
-# group: root
-user::rwx
-group::r-x
-other::r-x
-
-# file: bash/.git/hooks/update.sample
-# owner: root
-# group: root
-user::rwx
-group::r-x
-other::r-x
-
-# file: bash/.git/hooks/pre-rebase.sample
-# owner: root
-# group: root
-user::rwx
-group::r-x
-other::r-x
-
-# file: bash/.git/hooks/post-update.sample
-# owner: root
-# group: root
-user::rwx
-group::r-x
-other::r-x
-
-# file: bash/.git/objects
-# owner: root
-# group: root
-user::rwx
-group::r-x
-other::r-x
-
-# file: bash/.git/objects/pack
-# owner: root
-# group: root
-user::rwx
-group::r-x
-other::r-x
-
-# file: bash/.git/objects/info
-# owner: root
-# group: root
-user::rwx
-group::r-x
-other::r-x
-
-# file: bash/.git/objects/5e
-# owner: root
-# group: root
-user::rwx
-group::r-x
-other::r-x
-
-# file: bash/.git/objects/5e/61ef3a1649f879270062a4258a8ec3a64aa2d7
-# owner: root
-# group: root
-user::r--
-group::r--
-other::r--
-
-# file: bash/.git/objects/f6
-# owner: root
-# group: root
-user::rwx
-group::r-x
-other::r-x
-
-# file: bash/.git/objects/f6/715011a96fadeaaf77c6c4b795f32fa101139b
-# owner: root
-# group: root
-user::r--
-group::r--
-other::r--
-
-# file: bash/.git/objects/fb
-# owner: root
-# group: root
-user::rwx
-group::r-x
-other::r-x
-
-# file: bash/.git/objects/fb/6d90b9fb43957e7ee3ab734c5393eb96f06e24
-# owner: root
-# group: root
-user::r--
-group::r--
-other::r--
-
-# file: bash/.git/objects/9f
-# owner: root
-# group: root
-user::rwx
-group::r-x
-other::r-x
-
-# file: bash/.git/objects/9f/369b09b26b92936f4780fec9f29cd2247ce925
-# owner: root
-# group: root
-user::r--
-group::r--
-other::r--
-
-# file: bash/.git/HEAD
-# owner: root
-# group: root
-user::rw-
-group::r--
-other::r--
-
-# file: bash/.git/config
-# owner: root
-# group: root
-user::rw-
-group::r--
-other::r--
-
-# file: bash/.git/logs
-# owner: root
-# group: root
-user::rwx
-group::r-x
-other::r-x
-
-# file: bash/.git/logs/refs
-# owner: root
-# group: root
-user::rwx
-group::r-x
-other::r-x
-
-# file: bash/.git/logs/refs/remotes
-# owner: root
-# group: root
-user::rwx
-group::r-x
-other::r-x
-
-# file: bash/.git/logs/refs/remotes/origin
-# owner: root
-# group: root
-user::rwx
-group::r-x
-other::r-x
-
-# file: bash/.git/logs/refs/remotes/origin/HEAD
-# owner: root
-# group: root
-user::rw-
-group::r--
-other::r--
-
-# file: bash/.git/logs/refs/heads
-# owner: root
-# group: root
-user::rwx
-group::r-x
-other::r-x
-
-# file: bash/.git/logs/refs/heads/master
-# owner: root
-# group: root
-user::rw-
-group::r--
-other::r--
-
-# file: bash/.git/logs/HEAD
-# owner: root
-# group: root
-user::rw-
-group::r--
-other::r--
-
-# file: bash/.git/packed-refs
-# owner: root
-# group: root
-user::rw-
-group::r--
-other::r--
-
-# file: bash/.git/index
-# owner: root
-# group: root
-user::rw-
-group::r--
-other::r--
-
-# file: bash/LICENSE
-# owner: root
-# group: root
-user::rw-
-group::r--
-other::r--
-
-# file: bash/README.md
-# owner: root
-# group: root
-user::rw-
-group::r--
-other::r--
-
-# file: LICENSE
-# owner: root
-# group: root
-user::rw-
-group::r--
-other::r--
-
-# file: README.md
-# owner: root
-# group: root
-user::rw-
-group::r--
-other::r--
 
