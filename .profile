@@ -12,8 +12,8 @@
 if [ -n "$BASH_VERSION" ]; then
 
     # include .bashfunction.lib.sh if it exists (home made bash library)
-    if [ -f "$HOME/..bashfunction.lib.sh" ]; then
-	. "$HOME/..bashfunction.lib.sh"
+    if [ -f "$HOME/.bashfunction.lib.sh" ]; then
+	. "$HOME/.bashfunction.lib.sh"
     fi
 
     # include .bashrc if it exists
