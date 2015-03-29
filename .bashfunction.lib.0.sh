@@ -4,8 +4,14 @@
 # Global Variables
 #####################################################################
 FUNCTION_TO_TEST="no"
-CURRENT_FILE=~/.profile
-NEWER_FILE=~/home-repo/.profile
+
+GIT_HOME_REPO=~/home-repo
+
+CURRENT_PROFILE=~/.profile
+NEWER_PROFILE=$GIT_HOME_REPO/.profile
+
+CURRENT_BASHLIBRARY=~/.bashfunction.lib.0.sh
+NEWER_BASHLIBRARY=$GIT_HOME_REPO/.bashfunction.lib.0.sh
 
 #####################################################################
 # Functions directory and files
@@ -175,10 +181,10 @@ function replace_current_newer_file() {
 	if [[ "$__result1" == 0 ]] && [[ "$__result2" == 0 ]]; then
     
 	    # Check if a new file is available
-    	    check_new_file_available $__arg2 $__arg1
+    	    check_new_file_available $__arg1 $__arg2
 
     	    if [[ "$?" == 1 ]]; then
-		cp -v -f $__arg1 $__arg2
+		cp -v -f $__arg2 $__arg1
 		return 0
     	    fi 
 	else
@@ -231,6 +237,13 @@ function function_test() {
     fi
 } # function_test()
 
+#####################################################################
+##
+## ----- main -----
+##
+#####################################################################
+
 function_test $FUNCTION_TO_TEST
 
-replace_current_newer_file $CURRENT_FILE $NEWER_FILE
+replace_current_newer_file $CURRENT_PROFILE $NEWER_PROFILE
+replace_current_newer_file $CURRENT_BASHLIBRARY $NEWER_BASHLIBRARY
