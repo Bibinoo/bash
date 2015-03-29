@@ -1,7 +1,11 @@
 #!/bin/bash
+#####################################################################
+# Variables
+#####################################################################
+FUNCTION_TO_TEST="yes"
 
 #####################################################################
-# Functions
+# Functions directory and files
 #####################################################################
 function check_dir_exists () {
 
@@ -47,23 +51,27 @@ function check_file_exists () {
     fi
 }
 
-function check_dir_exists_test () {
-    check_dir_exists ~/home-repo
-    check_dir_exists ~/homerepo
-    check_dir_exists ""
-    check_dir_exists
-}
-
-function check_file_exists_test () {
-    check_file_exists ~/home-repo/.profile
-    check_file_exists ~/home-repo/.profile1
-    check_file_exists ""
-    check_file_exists
-}
-
+#####################################################################
+# Test function: if yes, then test otherwise don't test
+#####################################################################
 function function_test () {
-check_file_exists_test
-check_dir_exists_test
+
+    # If arg existing and greater than nothing then continue
+    if [[ "$#" != 0 ]] && [[ -n "$1" ]]; then
+
+	if [[ "$1" == "yes" ]]; then
+
+	    check_file_exists .bashfunctiontest.lib.0.sh
+    
+    	    if [[ "$?" == 0 ]]; then
+		echo "Launching the tests"
+		. .bashfunctiontest.lib.0.sh
+    	    fi
+	fi
+    else
+	echo "Parameter #1 is null or doesn't exist, aborting"
+	return 2
+    fi
 }
 
-function_test
+function_test $FUNCTION_TO_TEST
