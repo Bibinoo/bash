@@ -3,14 +3,6 @@
 #####################################################################
 # Functions
 #####################################################################
-function check_arg_exists () {
-    if [[ "$#" -eq 0 ]] ; then
-	echo "Parameter #1 doesn't exist, aborting"
-	return 2
-    fi
-}
-
-
 function check_dir_exists () {
 
     # If arg existing and greater than nothing then continue
@@ -69,6 +61,9 @@ function check_dir_exists_test () {
     check_dir_exists
 }
 
+function function_test () {
 check_file_exists_test
 check_dir_exists_test
-#check_arg_exists
+}
+
+function_test
