@@ -18,8 +18,8 @@ function check_file_exists_test () {
 }
 
 function function_test () {
-check_file_exists_test
 check_dir_exists_test
+check_file_exists_test
 }
 
 function_test
