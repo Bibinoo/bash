@@ -5,13 +5,16 @@
 #####################################################################
 FUNCTION_TO_TEST="no"
 
+PROFILE_FILE=.profile
+BASHLIBRARY_FILE=.bashfunction.lib.0.sh
+
 GIT_HOME_REPO=~/home-repo
 
-CURRENT_PROFILE=~/.profile
-NEWER_PROFILE=$GIT_HOME_REPO/.profile
+CURRENT_PROFILE=~/$PROFILE_FILE
+NEWER_PROFILE=$GIT_HOME_REPO/$PROFILE_FILE
 
-CURRENT_BASHLIBRARY=~/.bashfunction.lib.0.sh
-NEWER_BASHLIBRARY=$GIT_HOME_REPO/.bashfunction.lib.0.sh
+CURRENT_BASHLIBRARY=~/$BASHLIBRARY_FILE
+NEWER_BASHLIBRARY=$GIT_HOME_REPO/$BASHLIBRARY_FILE
 
 #####################################################################
 # Functions directory and files
