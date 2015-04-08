@@ -1,5 +1,8 @@
 #!/bin/bash
 #set -E
+#set -x
+set +u
+set +e
 #####################################################################
 # Global Variables
 #####################################################################
@@ -17,8 +20,76 @@ CURRENT_BASHLIBRARY=~/$BASHLIBRARY_FILE
 NEWER_BASHLIBRARY=$GIT_HOME_REPO/$BASHLIBRARY_FILE
 
 #####################################################################
-# Functions directory and files
+# Functions check (variables, directlories, files ...)
 #####################################################################
+function check_variable_defined() {
+
+    ## ----- head -----
+    ##
+    ## DESCRIPTION:
+    ##   Check if a variable is defined
+    ##
+    ## ARGUMENTS:
+    ##   1: variable to check
+    ##
+    ## GLOBAL VARIABLES USED:
+    ##   /
+    ##
+    ## EXIT CODE:
+    ##   0: if the variable is defined (set) and value's length > 0
+    ##   99: if the variable is not defined or > 0
+    ##
+
+    ## ----- main -----
+
+    if [ $# -ne 1 ]; then
+	echo "Expected exactly one argument: variable name as string, e.g., 'my_var'"
+        return 99
+    fi
+    # Tricky.  Since Bash option 'set -u' may be enabled, we cannot directly test if a variable
+    # is defined with this construct: [ ! -z "$var" ].  Instead, we must use default value
+    # substitution with this construct: [ ! -z "${var:-}" ].  Normally, a default value follows the
+    # operator ':-', but here we leave it blank for empty (null) string.  Finally, we need to
+    # substitute the text from $1 as 'var'.  This is not allowed directly in Bash with this
+    # construct: [ ! -z "${$1:-}" ].  We need to use indirection with eval operator.
+    # Example: $1="var"
+    # Expansion for eval operator: "[ ! -z \${$1:-} ]" -> "[ ! -z \${var:-} ]"
+    # Code  execute: [ ! -z ${var:-} ]
+    eval "[ ! -z \${$1:-} ]"
+    echo "Wow this is working, the parameter is set"
+    return $?  # Pedantic
+
+} # check_variable_defined()
+
+function check_variable_has_value() {
+
+    ## ----- head -----
+    ##
+    ## DESCRIPTION:
+    ##   Check if a variable has a value
+    ##
+    ## ARGUMENTS:
+    ##   1: variable to check
+    ##
+    ## GLOBAL VARIABLES USED:
+    ##   /
+    ##
+    ## EXIT CODE:
+    ##   0: if the variable is defined (set) and value's length > 0
+    ##   1: if the variable is not defined or > 0
+    ##
+
+    ## ----- main -----
+
+    if check_variable_defined $1; then
+	#if [[ -n ${!1} ]]; then
+	if [[ -z "$1" ]]; then
+	    echo "Variable is set"
+	fi
+    fi
+    return 1
+} # check_variable_has_value()
+
 function check_dir_exists() {
 
     ## ----- head -----
@@ -35,28 +106,24 @@ function check_dir_exists() {
     ## EXIT CODE:
     ##   0: if the directory exists
     ##   1: if the directory doesn't exists
-    ##   2: if the argument(s) is/are null or not specified
+    ##   99: if the argument(s) is/are null or not specified
     ##
 
     ## ----- main -----
 
-    # If arg existing and greater than nothing then continue
-    if [[ "$#" != 0 ]] && [[ -n "$1" ]]; then
+    # If no arg or arg is nothing then return 99 as an exit code
+    if [[ "$#" == 0 ]] || [[ -z "$1" ]]; then echo "Parameter #1 is null or not specified, aborting" && return 99;fi
 
-	# Setup local variable within function
-	local __arg1="$1"
+    # Setup local variable within function
+    local __arg1="$1"
     	
-	# Check if the dir and/or file is existing
-	if [ -d "$__arg1" ]; then
-	    echo "Directory $__arg1 is existing"
-	    return 0
-   	else
-	    echo "Directory $__arg1 is not existing. Returning 1 and exiting the function"
-	    return 1
-	fi
+    # Check if the dir and/or file is existing
+    if [[ -d "$__arg1" ]]; then
+	echo "Directory $__arg1 is existing"
+	return 0
     else
-	echo "Parameter #1 is null or not specified, aborting"
-	return 2
+	echo "Directory $__arg1 is not existing. Returning 1 and exiting the function"
+	return 1
     fi
 } # check_dir_exists()
 
@@ -76,27 +143,24 @@ function check_file_exists() {
     ## EXIT CODE:
     ##   0: if the file exists
     ##   1: if the file doesn't exists
-    ##   2: if the argument(s) is/are null or not specified
+    ##   99: if the argument(s) is/are null or not specified
     ##
 
     ## ----- main -----
-    # If arg existing and greater than nothing then continue
-    if [[ "$#" != 0 ]] && [[ -n "$1" ]]; then
 
-	# Setup local variable within function
-	local __arg1="$1"
+    # If no arg or arg is nothing then return 99 as an exit code
+    if [[ "$#" == 0 ]] || [[ -z "$1" ]]; then echo "Parameter #1 is null or not specified, aborting" && return 99;fi
+
+    # Setup local variable within function
+    local __arg1="$1"
     	
-	# Check if the dir and/or file is existing
-	if [ -f "$__arg1" ]; then
-	    echo "File $__arg1 is existing"
-	    return 0
-   	else
-	    echo "File $__arg1 is not existing. Returning 1 and exiting the function"
-	    return 1
-	fi
+    # Check if the dir and/or file is existing
+    if [[ -f "$__arg1" ]]; then
+    	echo "File $__arg1 is existing"
+    	return 0
     else
-	echo "Parameter #1 is null or not specified, aborting"
-	return 2
+    	echo "File $__arg1 is not existing. Returning 1 and exiting the function"
+	return 1
     fi
 } # check_file_exists()
 
@@ -250,3 +314,14 @@ function_test $FUNCTION_TO_TEST
 
 replace_current_newer_file $CURRENT_PROFILE $NEWER_PROFILE
 replace_current_newer_file $CURRENT_BASHLIBRARY $NEWER_BASHLIBRARY
+
+check_dir_exists2 /etc
+echo $?
+check_dir_exists2 /et
+echo $?
+check_dir_exists2
+echo $?
+check_variable_defined $FUNCTION_TO_TEST
+check_variable_defined $FUNCTION_TO_TEST1
+check_variable_has_value $FUNCTION_TO_TEST
+check_variable_has_value $FUNCTION_TO_TEST1
