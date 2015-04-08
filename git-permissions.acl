@@ -1,0 +1,55 @@
+# file: .
+# owner: git
+# group: git
+user::rwx
+group::r-x
+other::---
+
+# file: .bash_logout
+# owner: git
+# group: git
+user::rw-
+group::---
+other::---
+
+# file: .profile
+# owner: git
+# group: git
+user::rw-
+group::r--
+other::r--
+
+# file: .bashrc
+# owner: git
+# group: git
+user::rw-
+group::r--
+other::r--
+
+# file: .bash_history
+# owner: git
+# group: git
+user::rw-
+group::r--
+other::r--
+
+# file: .viminfo
+# owner: git
+# group: git
+user::rw-
+group::r--
+other::r--
+
+# file: git-permissions.acl
+# owner: git
+# group: git
+user::rw-
+group::r--
+other::r--
+
+# file: .gitconfig
+# owner: git
+# group: git
+user::rw-
+group::r--
+other::r--
