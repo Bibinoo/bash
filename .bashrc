@@ -126,40 +126,67 @@ function ii()   # get current host related info
 #-----------------------------------
 # Check Functions
 #-----------------------------------
+function check_command_exists() {
 
-check_command_exists () {
-    type "$1" &> /dev/null ;
-}
+    ## ----- head -----
+    ##
+    ## DESCRIPTION:
+    ##   Check if a command is existing
+    ##
+    ## ARGUMENTS:
+    ##   1: command to check
+    ##
+    ## GLOBAL VARIABLES USED:
+    ##   /
+    ##
+    ## EXIT CODE:
+    ##   0: if the command exists
+    ##   1: if the command doesn't exists
+    ##   99: if the argument(s) is/are null or not specified
+    ##
+
+    ## ----- main -----
+
+    # If no arg or arg is nothing then return 99 as an exit code
+    if [[ "$#" == 0 ]] || [[ -z "$1" ]]; then echo "Parameter #1 is null or not specified, aborting" && return 99;fi
+
+    # Setup local variable within function
+    local __arg1="$1"
+
+    # Check if the command is existing
+    type "$__arg1" &> /dev/null
+    if [[ $? -eq 0 ]]; then
+        echo "Command $__arg1 is existing"
+        return 0
+    else
+        echo "Command $__arg1 is not existing. Returning 1 and exiting the function"
+        return 1
+    fi
+} # check_command_exists()
+
 
 #-----------------------------------
 # Git Configuration 
 #-----------------------------------
-
-if check_command_exists git ; then 
-
-    echo "git is installed then setting it"
-
+if check_command_exists git; then 
+    echo "Setting-up the configuration if existing"
     if [ -f ~/.gitrc ]; then
 	. ~/.gitrc
-    esle
-	echo "git configuration not present, aborting ..."
+    else
+	echo "Configuration not present, aborting ..."
     fi
-else
-    echo "git is not installed then not setting it"
 fi
 
 #-----------------------------------
 # Setfacl Configuration
 #-----------------------------------
 
-if check_command_exists setfacl ; then 
-
-    echo "$1 is installed then setting it"
-
+if check_command_exists setfacl; then 
+    echo "Setting-up the configuration if existing"
     if [ -f ~/permissions.acl ]; then
 	cd ~
 	setfacl --restore=permissions.acl 
+    else
+	echo "Configuration not present, aborting ..."
     fi
-else
-    echo "$1 is not installed then not setting it"
 fi
