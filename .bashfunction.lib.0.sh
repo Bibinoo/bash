@@ -22,6 +22,29 @@ NEWER_BASHLIBRARY=$GIT_HOME_REPO/$BASHLIBRARY_FILE
 #####################################################################
 # Functions check (variables, directlories, files ...)
 #####################################################################
+function init_debug_enabled() {
+
+    ## ----- head -----
+    ##
+    ## DESCRIPTION:
+    ##   Initialize debug and log messages systems
+    ##
+    ## ARGUMENTS:
+    ##   1: Debug enabled (yes/no)
+    ##
+    ## GLOBAL VARIABLES USED:
+    ##   /
+    ##
+    ## EXIT CODE:
+    ##   0: 
+    ##   99: 
+    ##
+
+    ## ----- main -----
+
+    echo ""
+} # init_debug_enabled()
+
 function check_variable_defined() {
 
     ## ----- head -----
@@ -37,13 +60,13 @@ function check_variable_defined() {
     ##
     ## EXIT CODE:
     ##   0: if the variable is defined (set) and value's length > 0
-    ##   99: if the variable is not defined or > 0
+    ##   99: if the variable is not defined
     ##
 
     ## ----- main -----
 
     if [ $# -ne 1 ]; then
-	echo "Expected exactly one argument: variable name as string, e.g., 'my_var'"
+	echo "Please define the variable"
         return 99
     fi
     # Tricky.  Since Bash option 'set -u' may be enabled, we cannot directly test if a variable
@@ -89,6 +112,44 @@ function check_variable_has_value() {
     fi
     return 1
 } # check_variable_has_value()
+
+function check_command_exists() {
+
+    ## ----- head -----
+    ##
+    ## DESCRIPTION:
+    ##   Check if a command is existing
+    ##
+    ## ARGUMENTS:
+    ##   1: command to check
+    ##
+    ## GLOBAL VARIABLES USED:
+    ##   /
+    ##
+    ## EXIT CODE:
+    ##   0: if the command exists
+    ##   1: if the command doesn't exists
+    ##   99: if the argument(s) is/are null or not specified
+    ##
+
+    ## ----- main -----
+
+    # If no arg or arg is nothing then return 99 as an exit code
+    if [[ "$#" == 0 ]] || [[ -z "$1" ]]; then echo "Parameter #1 is null or not specified, aborting" && return 99;fi
+
+    # Setup local variable within function
+    local __arg1="$1"
+
+    # Check if the command is existing
+    type "$__arg1" &> /dev/null
+    if [[ $? -eq 0 ]]; then
+        echo "Command $__arg1 is existing"
+        return 0
+    else
+        echo "Command $__arg1 is not existing. Returning 1 and exiting the function"
+        return 1
+    fi
+} # check_command_exists()
 
 function check_dir_exists() {
 
@@ -312,16 +373,18 @@ function function_test() {
 
 function_test $FUNCTION_TO_TEST
 
-replace_current_newer_file $CURRENT_PROFILE $NEWER_PROFILE
-replace_current_newer_file $CURRENT_BASHLIBRARY $NEWER_BASHLIBRARY
+#replace_current_newer_file $CURRENT_PROFILE $NEWER_PROFILE
+#replace_current_newer_file $CURRENT_BASHLIBRARY $NEWER_BASHLIBRARY
 
-check_dir_exists2 /etc
-echo $?
-check_dir_exists2 /et
-echo $?
-check_dir_exists2
-echo $?
-check_variable_defined $FUNCTION_TO_TEST
-check_variable_defined $FUNCTION_TO_TEST1
-check_variable_has_value $FUNCTION_TO_TEST
-check_variable_has_value $FUNCTION_TO_TEST1
+#check_dir_exists2 /etc
+#echo $?
+#check_dir_exists2 /et
+#echo $?
+#check_dir_exists2
+#echo $?
+#echo "Test if this variable is defined $FUNCTION_TO_TEST"
+#check_variable_defined $FUNCTION_TO_TEST
+#echo "Test if this variable is defined $FUNCTION_TO_TEST1"
+#check_variable_defined $FUNCTION_TO_TEST1
+#check_variable_has_value $FUNCTION_TO_TEST
+#check_variable_has_value $FUNCTION_TO_TEST1
