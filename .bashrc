@@ -126,43 +126,6 @@ function ii()   # get current host related info
 #-----------------------------------
 # Check Functions
 #-----------------------------------
-function check_command_exists() {
-
-    ## ----- head -----
-    ##
-    ## DESCRIPTION:
-    ##   Check if a command is existing
-    ##
-    ## ARGUMENTS:
-    ##   1: command to check
-    ##
-    ## GLOBAL VARIABLES USED:
-    ##   /
-    ##
-    ## EXIT CODE:
-    ##   0: if the command exists
-    ##   1: if the command doesn't exists
-    ##   99: if the argument(s) is/are null or not specified
-    ##
-
-    ## ----- main -----
-
-    # If no arg or arg is nothing then return 99 as an exit code
-    if [[ "$#" == 0 ]] || [[ -z "$1" ]]; then echo "Parameter #1 is null or not specified, aborting" && return 99;fi
-
-    # Setup local variable within function
-    local __arg1="$1"
-
-    # Check if the command is existing
-    type "$__arg1" &> /dev/null
-    if [[ $? -eq 0 ]]; then
-        echo "Command $__arg1 is existing"
-        return 0
-    else
-        echo "Command $__arg1 is not existing. Returning 1 and exiting the function"
-        return 1
-    fi
-} # check_command_exists()
 
 
 #-----------------------------------
