@@ -17,27 +17,27 @@ other::---
 # group: syncthing
 user::rw-
 group::r--
-other::r--
+other::---
 
 # file: .bashrc
 # owner: syncthing
 # group: syncthing
 user::rw-
 group::r--
-other::r--
+other::---
 
 # file: .bash_history
 # owner: syncthing
 # group: syncthing
 user::rw-
 group::r--
-other::r--
+other::---
 
 # file: .config
 # owner: syncthing
 # group: syncthing
 user::rwx
-group::r-x
+group::rw-
 other::---
 
 # file: .config/syncthing
@@ -58,131 +58,5052 @@ other::---
 # owner: syncthing
 # group: syncthing
 user::rwx
-group::r-x
-other::---
-
-# file: .config/syncthing/index
-# owner: syncthing
-# group: syncthing
-user::rwx
-group::r-x
-other::---
-
-# file: .config/syncthing/index/LOCK
-# owner: syncthing
-# group: syncthing
-user::rwx
-group::r-x
-other::---
-
-# file: .config/syncthing/index/LOG
-# owner: syncthing
-# group: syncthing
-user::rwx
-group::r-x
-other::---
-
-# file: .config/syncthing/index/000012.log
-# owner: syncthing
-# group: syncthing
-user::rwx
-group::r-x
-other::---
-
-# file: .config/syncthing/index/MANIFEST-000013
-# owner: syncthing
-# group: syncthing
-user::rwx
-group::r-x
-other::---
-
-# file: .config/syncthing/index/CURRENT
-# owner: syncthing
-# group: syncthing
-user::rwx
-group::r-x
-other::---
-
-# file: .config/syncthing/index/LOG.old
-# owner: syncthing
-# group: syncthing
-user::rwx
-group::r-x
+group::rw-
 other::---
 
 # file: .config/syncthing/config.xml
 # owner: syncthing
 # group: syncthing
 user::rwx
-group::r-x
+group::rw-
 other::---
 
 # file: .config/syncthing/https-cert.pem
 # owner: syncthing
 # group: syncthing
 user::rwx
-group::r-x
+group::rw-
 other::---
 
 # file: .config/syncthing/https-key.pem
 # owner: syncthing
 # group: syncthing
 user::rwx
-group::r-x
+group::rw-
 other::---
 
 # file: .config/syncthing/csrftokens.txt
 # owner: syncthing
 # group: syncthing
 user::rwx
-group::r-x
+group::rw-
 other::---
+
+# file: .config/syncthing/index-v0.11.0.db
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rw-
+other::---
+
+# file: .config/syncthing/index-v0.11.0.db/LOCK
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::r-x
+
+# file: .config/syncthing/index-v0.11.0.db/LOG
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: .config/syncthing/index-v0.11.0.db/000915.ldb
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: .config/syncthing/index-v0.11.0.db/000913.log
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: .config/syncthing/index-v0.11.0.db/CURRENT
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: .config/syncthing/index-v0.11.0.db/LOG.old
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: .config/syncthing/index-v0.11.0.db/000916.ldb
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: .config/syncthing/index-v0.11.0.db/MANIFEST-000263
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: .config/syncthing/index-v0.11.0.db/000917.ldb
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
 
 # file: Sync
 # owner: syncthing
 # group: syncthing
 user::rwx
-group::r-x
+group::---
 other::---
 
 # file: Sync/.stfolder
 # owner: syncthing
 # group: syncthing
-user::rwx
-group::r-x
-other::---
-
-# file: Sync/.stversions
-# owner: syncthing
-# group: syncthing
-user::rwx
-group::r-x
-other::---
+user::rw-
+group::rw-
+other::rw-
 
 # file: .viminfo
 # owner: syncthing
 # group: syncthing
 user::rw-
 group::r--
-other::r--
+other::---
 
 # file: permissions.acl
 # owner: syncthing
 # group: syncthing
 user::rw-
 group::r--
-other::r--
+other::---
 
 # file: .gitconfig
 # owner: syncthing
 # group: syncthing
 user::rw-
 group::r--
-other::r--
+other::---
 
 # file: .gitrc
 # owner: syncthing
 # group: syncthing
+user::rw-
+group::r--
+other::---
+
+# file: syncthing
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::r-x
+
+# file: syncthing/.git
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::r-x
+
+# file: syncthing/.git/refs
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::r-x
+
+# file: syncthing/.git/refs/heads
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::r-x
+
+# file: syncthing/.git/refs/heads/master
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: syncthing/.git/refs/tags
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::r-x
+
+# file: syncthing/.git/refs/remotes
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::r-x
+
+# file: syncthing/.git/refs/remotes/origin
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::r-x
+
+# file: syncthing/.git/refs/remotes/origin/HEAD
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: syncthing/.git/description
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: syncthing/.git/branches
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::r-x
+
+# file: syncthing/.git/info
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::r-x
+
+# file: syncthing/.git/info/exclude
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: syncthing/.git/hooks
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::r-x
+
+# file: syncthing/.git/hooks/pre-applypatch.sample
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: syncthing/.git/hooks/prepare-commit-msg.sample
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: syncthing/.git/hooks/commit-msg.sample
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: syncthing/.git/hooks/pre-commit.sample
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: syncthing/.git/hooks/applypatch-msg.sample
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: syncthing/.git/hooks/update.sample
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: syncthing/.git/hooks/pre-rebase.sample
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: syncthing/.git/hooks/post-update.sample
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: syncthing/.git/objects
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::r-x
+
+# file: syncthing/.git/objects/pack
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::r-x
+
+# file: syncthing/.git/objects/info
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::r-x
+
+# file: syncthing/.git/objects/37
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::r-x
+
+# file: syncthing/.git/objects/37/546689a4eeb1768973b9f0d93ba2229c1a0604
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::r-x
+
+# file: syncthing/.git/objects/32
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::r-x
+
+# file: syncthing/.git/objects/32/6dcbce8bf084975dc1bc74868051df85ae897b
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::r-x
+
+# file: syncthing/.git/objects/fb
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::r-x
+
+# file: syncthing/.git/objects/fb/6d90b9fb43957e7ee3ab734c5393eb96f06e24
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::r-x
+
+# file: syncthing/.git/objects/81
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::r-x
+
+# file: syncthing/.git/objects/81/3a55ebe0b15acc96401d30fdf4691f4e990f65
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::r-x
+
+# file: syncthing/.git/HEAD
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: syncthing/.git/config
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: syncthing/.git/logs
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::r-x
+
+# file: syncthing/.git/logs/refs
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: syncthing/.git/logs/refs/remotes
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::r-x
+
+# file: syncthing/.git/logs/refs/remotes/origin
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::r-x
+
+# file: syncthing/.git/logs/refs/remotes/origin/HEAD
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: syncthing/.git/logs/refs/heads
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::r-x
+
+# file: syncthing/.git/logs/refs/heads/master
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: syncthing/.git/logs/HEAD
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: syncthing/.git/packed-refs
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: syncthing/.git/index
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: syncthing/LICENSE
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: syncthing/README.md
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: bash
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::r-x
+
+# file: bash/.git
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::r-x
+
+# file: bash/.git/refs
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/refs/heads
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/refs/heads/master
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/refs/tags
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/refs/remotes
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/refs/remotes/origin
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/refs/remotes/origin/HEAD
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/refs/remotes/origin/master
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/description
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/branches
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/info
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/info/exclude
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/hooks
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/hooks/pre-applypatch.sample
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/hooks/prepare-commit-msg.sample
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/hooks/commit-msg.sample
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/hooks/pre-commit.sample
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/hooks/applypatch-msg.sample
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/hooks/update.sample
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/hooks/pre-rebase.sample
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/hooks/post-update.sample
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/pack
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/info
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/0e
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/0e/001f99e52c1aa9eee3c3c093ff4de6a83e6545
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/04
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/04/e0b1c43024735e60fea2d105b033547d370248
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/99
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/99/3da64d22f604a39d922efab523d6c03bb9299d
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/5e
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/5e/61ef3a1649f879270062a4258a8ec3a64aa2d7
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/78
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/78/6585fbf5b30395812b49eadd5d5b926541cadc
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/c5
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/c5/f26b873d0078f45a47ef97220da3b98bb5c0e8
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/9c
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/9c/ce1d646539e6135c541fcc8c50897355e964b7
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/2e
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/2e/b44b28225701ed3413b44da4afa68be009503b
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/fb
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/fb/6d90b9fb43957e7ee3ab734c5393eb96f06e24
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/9f
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/9f/369b09b26b92936f4780fec9f29cd2247ce925
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/a8
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/a8/e90a4a0464ab4358a5f16b94bf67f7890d0930
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/49
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/49/50788c823a3934dd7661b7fab8dd4524dc226e
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/62
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/62/a2c614746a2c35e1447b5ef6a9191635a8edf5
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/f6
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/f6/715011a96fadeaaf77c6c4b795f32fa101139b
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/f9
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/f9/49b0326d9b3d0b4e37682c3335d91e4e6ffa15
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/3b
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/3b/4736aaa1f57f7cc033aee80ea5c66981a7fc1a
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/7e
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/objects/7e/d82ac0d00b55512d06ec1fe6d06a2ee63ec71e
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/HEAD
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/config
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/logs
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/logs/refs
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/logs/refs/remotes
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/logs/refs/remotes/origin
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/logs/refs/remotes/origin/HEAD
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/logs/refs/remotes/origin/master
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/logs/refs/heads
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/logs/refs/heads/master
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/logs/HEAD
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/packed-refs
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/index
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.git/COMMIT_EDITMSG
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: bash/.bashrc
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::---
+
+# file: bash/.profile
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::---
+other::---
+
+# file: bash/LICENSE
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: bash/README.md
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: bash/root-permissions.acl
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: bash/syncthing-permissions.acl
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::r-x
+
+# file: camera/.stfolder
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::---
+
+# file: camera/.thumbnails
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::---
+
+# file: camera/.thumbnails/1441964958402.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1440487345548.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1445652391519.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/1441732665305.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1441964958116.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1445652245697.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/1440772265638.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1442240736646.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1442073050721.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1445652392316.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/1440487344788.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1440909742167.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/.thumbdata3--1967290299
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/1441535683445.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1432383968901.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443111058448.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1441964957929.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1445652389714.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/1440067902968.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1431770386374.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1442591814812.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443111327671.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1445652392163.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/1441724776785.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1441964958545.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1442235438970.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1439806768466.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1442341431956.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1442240768999.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1445652389545.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/1443188073551.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1432137040955.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1442341437396.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1432463360911.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1445652392026.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/1443188064869.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1441535680081.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1409075994904.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1431851371423.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1442496068886.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1439296697439.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1442591813438.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1439806767885.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1439806766535.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1442341436026.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1439303685662.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1439735748509.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1441336716259.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1431675767361.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1442367723492.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1442073052182.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1442033715998.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1439365541542.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1409075995152.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1442341432069.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1441289288355.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/.sync-conflict-20151024-050209.thumbdata3--1967290299
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1439296696401.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1441964958953.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1441535682258.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1439735830465.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1433357584900.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1439303680074.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1442591813594.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1441535683590.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443188064046.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1441964959117.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443188071637.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1441535682093.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1441535680259.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1442367725932.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1440429022096.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1441727902185.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1443188073189.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1439362843909.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1441535680631.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1442033715093.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1438940456048.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1443188071178.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/.sync-conflict-20151024-030854.thumbdata3--1967290299
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/1408885463194.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1442341436141.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1442589342727.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1443188064660.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1408519069451.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1440475055459.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1442341428759.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1439776876521.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1442341432189.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1441732653293.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1441964959038.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1440775720438.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1439050022989.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1440487346468.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1441214488548.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1443188072810.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1441727900092.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1439806769789.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1439303684740.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/.sync-conflict-20151018-170034.thumbdata3--1967290299
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1439296696814.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1440437331423.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1441289288005.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1443188054232.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1441732652858.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1441535682896.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1440770583933.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1442367727173.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1443188070712.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1432169406246.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1440487346848.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1439806770419.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1439296697089.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1441964957780.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1442073052252.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1441535682477.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1409075994354.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1441964958661.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1432469537172.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1442341428939.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1433448040758.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443188067089.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1439296695492.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1443188053628.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1441535590730.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1440339543584.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1443188055409.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1433347878149.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1441535683213.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1442033715622.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1442367725241.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1440487345934.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1441535682690.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1440339543381.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1443188065691.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1442589343788.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1440437330385.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1409075994606.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1441732655600.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1441732664877.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1432463382182.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1433357896849.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1440775719043.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1440339543760.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1443188068964.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443188066812.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1411130250096.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1441964958863.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1432137037848.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1440407002308.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1433357618465.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1442073052100.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1442591814884.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1441732656726.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1411130250410.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1441724749306.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1432358989238.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1439806767338.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1442235333039.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443188065275.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1442367662834.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1440909757520.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1441535679847.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1432383933972.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443188069367.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1441337349302.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1440775719566.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1411130250822.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443188070929.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1441017213387.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1440067902557.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1442496059688.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1441289133856.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1443188065493.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1442748676465.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1439806764910.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1442367727478.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443188054657.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1440475054896.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/.sync-conflict-20151018-150417.thumbdata3--1967290299
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/1442367725529.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1442341431726.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1432169419205.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1440321826624.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1441732655300.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1443188053954.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1440487347694.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1441964958270.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1441732654641.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1442591814662.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1432463672117.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443188070457.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/.sync-conflict-20151018-170040.thumbdata3--1967290299
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1443188072105.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1431770402511.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1440437330968.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1442367726208.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/.sync-conflict-20151024-050206.thumbdata3--1967290299
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1442341432909.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1432463321098.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1439303684218.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1439303679020.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1441732655043.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1440428969730.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1439806766766.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1439806768149.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1442033714657.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1441732664419.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1441214487838.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1439303681937.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1439296707128.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1439303678461.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1441732657136.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1440429022564.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1439296693350.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1439303679514.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1440271256085.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1439806767621.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1439806767049.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1440437330676.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1443188064230.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1441017212815.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1440772239872.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1440067902105.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1439050118616.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1442367630744.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1431770360995.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443188065068.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1439303681255.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1443188070208.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1439296695796.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1439776875419.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1442367725002.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1439303685179.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1440473727276.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1440271248948.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1439303680638.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1441214488978.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1441732656183.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1439303683494.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1443188055166.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1439303682555.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1440487345125.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1439296707424.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1439296672344.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1439296707654.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1440246534511.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1439296695138.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1441727906478.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1442029049278.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1440487347269.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1441732655862.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1439365540480.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1439296694832.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1442768602143.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1442768601831.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1442768593998.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1442768602550.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/.sync-conflict-20150923-182125.thumbdata3-1763508120
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/.sync-conflict-20150923-162216.thumbdata3-1763508120
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/.sync-conflict-20150924-162136.thumbdata3--1967290299
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443188069843.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/.sync-conflict-20150923-182120.thumbdata3-1763508120
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/.sync-conflict-20150923-173900.thumbdata3-1763508120
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/.sync-conflict-20150924-162216.thumbdata3--1967290299
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/.sync-conflict-20150923-193814.thumbdata3-1763508120
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/.sync-conflict-20150923-193820.thumbdata3-1763508120
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443188054463.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443188054903.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443188072334.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443188064406.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443188047722.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443188068061.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443188066082.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443188047465.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443188071862.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443188066585.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443268546425.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443188065880.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443188055607.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443188073394.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443188050896.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443188072560.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443188066294.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443188073040.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443188071379.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443188068424.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443268545268.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443320478784.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443320363775.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443293726980.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443268544994.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443320479012.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443268545757.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443268546213.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443320276188.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443268546654.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443268545455.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443268298502.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443268544771.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443293727184.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443268545987.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443293725284.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443268542806.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443293725413.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443293725193.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443268273165.jpg
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/.sync-conflict-20150927-073510.thumbdata3--1967290299
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: camera/.thumbnails/1443490687638.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/1443490650175.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/1443188452881.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1443491986487.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/.sync-conflict-20151004-085812.thumbdata3-1763508120
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1443875459925.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/1443875459722.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/1443175938559.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1443867437383.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/1443867438953.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/.sync-conflict-20151004-070142.thumbdata3-1763508120
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/.sync-conflict-20151004-085810.thumbdata3--1967290299
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1443188331339.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1443452650536.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/.sync-conflict-20151004-085815.thumbdata3--1967290299
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1443175940036.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/1443192036086.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/1443175939737.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1443867436184.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/1443192024400.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1443192023979.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1443175938883.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1443192025653.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1443452649097.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1445167769360.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/1443867438406.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1444475707268.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/.sync-conflict-20151011-054155.thumbdata3--1967290299
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1444725020198.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/.sync-conflict-20151011-034341.thumbdata3--1967290299
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/.sync-conflict-20151013-082947.thumbdata3--1967290299
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/.sync-conflict-20151011-054148.thumbdata3--1967290299
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/.sync-conflict-20151013-102841.thumbdata3--1967290299
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/.sync-conflict-20151013-102845.thumbdata3--1967290299
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/.sync-conflict-20151014-110220.thumbdata3--1967290299
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1444883155478.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/.sync-conflict-20151014-090325.thumbdata3-1763508120
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/.sync-conflict-20151014-090426.thumbdata3--1967290299
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/1444883181319.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/1444883180549.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/1444883180825.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/1444883181564.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/.sync-conflict-20151014-110212.thumbdata3-1763508120
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/.sync-conflict-20151014-110212.thumbdata3--1967290299
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1444883181015.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/1444883180656.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/1444883180310.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/1444883155232.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/1445167759681.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/.sync-conflict-20151015-042528.thumbdata3--1967290299
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/.sync-conflict-20151015-042652.thumbdata3--1967290299
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/.thumbnails/.sync-conflict-20151015-062419.thumbdata3--1967290299
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/.thumbnails/1445099501625.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::rw-
+other::rw-
+
+# file: camera/Camera
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::r-x
+
+# file: camera/Camera/20150905_215835.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150825_090501.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150824_161923.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150908_212725.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150916_071014.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150825_090517.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150908_203559.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/DSC_0576.JPG
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150908_212726.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150822_175824.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150811_180759.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150809_095946.mp4
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/DSC_0560.JPG
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150812_115738.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150808_213722.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150817_154732.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150808_213725.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150809_100021.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150824_161913.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150817_154730.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20140824_183343.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/DSC_0565.JPG
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150824_161912.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150916_071112.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150822_175819.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150808_080000.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150816_200557.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150903_193518.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150809_100008.mp4
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150920_170034.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20140817_162636.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150808_213731.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150824_161911.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150916_071043.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/DSC_0558.JPG
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150825_090459.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150908_203531.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150820_105704.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150825_090518.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150905_215840.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150825_090506.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150808_213711.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150912_090745.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20140817_162653.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150918_154048.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150823_145348.mp4
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150912_090704.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150908_203555.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150808_213803.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150825_090521.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150825_090520.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20140824_183330.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150908_212723.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150913_115554.mp4
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150828_200021.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/DSC_0556.JPG
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/DSC_0579.JPG
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/DSC_0557.JPG
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150905_215849.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/DSC_0564.JPG
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150828_200059.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20140817_162635.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150908_203528.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150812_123052.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/DSC_0559.JPG
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150825_090522.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150817_154743.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150825_090527.mp4
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150916_071012.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150824_143251.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150811_180803.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20140824_183322.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150925_191027.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150902_204434.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150920_170041.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150817_154728.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20140824_183334.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150902_204259.mp4
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150824_161903.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20140817_162649.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150822_175817.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/DSC_0575.JPG
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150916_071120.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150920_170038.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20140824_183338.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150808_075958.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150912_090711.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150816_200614.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/DSC_0561.JPG
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150903_193557.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150822_175829.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20151003_154101.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150908_203554.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/DSC_0566.JPG
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150811_180802.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150920_170044.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150820_105657.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150812_123054.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150916_071039.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150908_203532.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150908_203556.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150912_090702.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/DSC_0563.JPG
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150816_200539.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150908_212727.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150908_093907.mp4
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150916_071109.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150902_204429.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150807_094059.mp4
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150816_200609.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150822_175804.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/DSC_0562.JPG
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150908_203524.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150828_200026.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150817_154724.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150822_175827.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150816_200610.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150903_193520.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/DSC_0555.JPG
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150912_090754.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150816_200616.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150908_212720.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150824_161906.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150828_200024.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150828_200612.mp4
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150916_071117.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150825_090520(0).jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150818_110650.mp4
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150822_175903.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150908_212724.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/DSC_0577.JPG
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150808_213813.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150908_203558.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150820_105651.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150831_135326.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150831_135325.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150828_200018.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150916_071042.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150908_203526.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/DSC_0567.JPG
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150817_154745.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150817_154739.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150825_090254.mp4
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150817_154748.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150817_154741.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150908_203529.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150825_090524.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150824_161916.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150808_080001.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150825_090504.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150808_080002.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150902_204428.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150908_203552.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/DSC_0578.JPG
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150903_193553.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150918_154053.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150808_213844.mp4
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150808_075945.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150916_071010.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150925_190908.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150925_190930.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150920_170032.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150925_154131.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150925_154133.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20151003_154058.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150925_191025.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20151004_112336.mp4
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150925_190942.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150925_154127.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150925_190000.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20151003_154056.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20150925_190935.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Camera/20151003_154055.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/20140817_162635_Android.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/20140824_183334_Android.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/20141029_224025.mp4
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/Thumbs.db
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/20141013_074724_Android.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/20140817_162653_Android.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/20141012_125919_Android.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/20140824_183330_Android.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/20140910_214950_Android.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/20140824_183338_Android.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/20141012_125918_Android.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/20140817_162636_Android.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/20140910_214954_Android.mp4
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/20141023_193547_Android.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/20141128_214323.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/20140824_183343_Android.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/20141013_074835_Android.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/20141102_170619.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/20140817_162649_Android.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/20141126_203835.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/20141013_074753_Android.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/20140824_183322_Android.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: camera/20141110_110413.jpg
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: SpiderOak_Hive
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::r-x
+
+# file: SpiderOak_Hive/.stfolder
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::rwx
+other::rwx
+
+# file: SpiderOak_Hive/Keepass
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::r-x
+
+# file: SpiderOak_Hive/Keepass/Traqx_Denny_MANSART.key
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: SpiderOak_Hive/Keepass/Kaushal Kishore Sharma.kdbx
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: SpiderOak_Hive/Keepass/Traqx_Denny_MANSART.kdbx
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: SpiderOak_Hive/Keepass/Kaushal Kishore Sharma.key
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: SpiderOak_Hive/Keepass/Denny_MANSART.kdbx
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: SpiderOak_Hive/Keepass/Denny_MANSART.key
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: SpiderOak_Hive/Onename
+# owner: syncthing
+# group: syncthing
+user::rwx
+group::r-x
+other::r-x
+
+# file: SpiderOak_Hive/Onename/onename-backup-denny_mansart.txt
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: SpiderOak_Hive/Onename/onename-backup-shalini_sharma.txt
+# owner: syncthing
+# group: syncthing
+user::rw-
+group::r--
+other::r--
+
+# file: permissions2.acl
+# owner: root
+# group: root
 user::rw-
 group::r--
 other::r--
