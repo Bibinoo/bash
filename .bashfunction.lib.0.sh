@@ -8,16 +8,24 @@ set +e
 #####################################################################
 FUNCTION_TO_TEST="no"
 
-PROFILE_FILE=.profile
-BASHLIBRARY_FILE=.bashfunction.lib.0.sh
+PROFILE_FILE=".profile"
+BASHRC_FILE=".bashrc"
+BASHPROFILE_FILE=".bash_profile"
+BASHLIBRARY_FILE=".bashfunction.lib.0.sh"
 
-GIT_HOME_REPO=~/home-repo
+GIT_HOME_REPO="/home/git/home-repo"
 
-CURRENT_PROFILE=~/$PROFILE_FILE
-NEWER_PROFILE=$GIT_HOME_REPO/$PROFILE_FILE
+CURRENT_BASHPROFILE=~/${BASHPROFILE_FILE}
+NEWER_BASHPROFILE=${GIT_HOME_REPO}/${BASHPROFILE_FILE}
 
-CURRENT_BASHLIBRARY=~/$BASHLIBRARY_FILE
-NEWER_BASHLIBRARY=$GIT_HOME_REPO/$BASHLIBRARY_FILE
+CURRENT_PROFILE=~/${PROFILE_FILE}
+NEWER_PROFILE=${GIT_HOME_REPO}/${PROFILE_FILE}
+
+CURRENT_BASHLIBRARY=~/${BASHLIBRARY_FILE}
+NEWER_BASHLIBRARY=${GIT_HOME_REPO}/${BASHLIBRARY_FILE}
+
+CURRENT_BASHRC=~/${BASHRC_FILE}
+NEWER_BASHRC=${GIT_HOME_REPO}/${BASHRC_FILE}
 
 #####################################################################
 # Functions check (variables, directlories, files ...)
@@ -42,7 +50,7 @@ function init_debug_enabled() {
 
     ## ----- main -----
 
-    echo ""
+    echo "Function to be developed"
 } # init_debug_enabled()
 
 function check_variable_defined() {
@@ -65,7 +73,7 @@ function check_variable_defined() {
 
     ## ----- main -----
 
-    if [ $# -ne 1 ]; then
+    if [[ "$#" -ne 1 ]]; then
 	echo "Please define the variable"
         return 99
     fi
@@ -141,12 +149,12 @@ function check_command_exists() {
     local __arg1="$1"
 
     # Check if the command is existing
-    type "$__arg1" &> /dev/null
-    if [[ $? -eq 0 ]]; then
-        echo "Command $__arg1 is existing"
+    type "${__arg1}" &> /dev/null
+    if [[ "$?" -eq 0 ]]; then
+        echo "Command ${__arg1} is existing"
         return 0
     else
-        echo "Command $__arg1 is not existing. Returning 1 and exiting the function"
+        echo "Command ${__arg1} is not existing. Returning 1 and exiting the function"
         return 1
     fi
 } # check_command_exists()
@@ -179,11 +187,11 @@ function check_dir_exists() {
     local __arg1="$1"
     	
     # Check if the dir and/or file is existing
-    if [[ -d "$__arg1" ]]; then
-	echo "Directory $__arg1 is existing"
+    if [[ -d "${__arg1}" ]]; then
+	echo "Directory ${__arg1} is existing"
 	return 0
     else
-	echo "Directory $__arg1 is not existing. Returning 1 and exiting the function"
+	echo "Directory ${__arg1} is not existing. Returning 1 and exiting the function"
 	return 1
     fi
 } # check_dir_exists()
@@ -216,11 +224,11 @@ function check_file_exists() {
     local __arg1="$1"
     	
     # Check if the dir and/or file is existing
-    if [[ -f "$__arg1" ]]; then
-    	echo "File $__arg1 is existing"
+    if [[ -f "${__arg1}" ]]; then
+    	echo "File ${__arg1} is existing"
     	return 0
     else
-    	echo "File $__arg1 is not existing. Returning 1 and exiting the function"
+    	echo "File ${__arg1} is not existing. Returning 1 and exiting the function"
 	return 1
     fi
 } # check_file_exists()
@@ -254,11 +262,11 @@ function check_new_file_available() {
 	local __arg1="$1"
 	local __arg2="$2"
 	
-	if [[ "$__arg1" -ot "$__arg2" ]]; then
-	    echo "$__arg1 is older than $__arg2"
+	if [[ "${__arg1}" -ot "${__arg2}" ]]; then
+	    echo "${__arg1} is older than ${__arg2}"
 	    return 1 # True
 	else
-	    echo "There is no new available file for $__arg1"
+	    echo "There is no new available file for ${__arg1}"
 	    return 0 # False
 	fi
     else
@@ -267,6 +275,9 @@ function check_new_file_available() {
     fi
 } # check_new_file_available()
 
+#####################################################################
+# Others check (system update, file update ...)
+#####################################################################
 function replace_current_newer_file() {
 
     ## ----- head -----
@@ -297,22 +308,23 @@ function replace_current_newer_file() {
 	local __arg2="$2"
     
 	# Check if file is existing
-	check_file_exists $__arg1
+	check_file_exists ${__arg1}
     	# Storing result of the function
-	local __result1=$?
+	local __result1="$?"
 
 	# Check if file is existing
-    	check_file_exists $__arg2
+    	check_file_exists ${__arg2}
     	# Storing result of the function
-    	local __result2=$?
+    	local __result2="$?"
 
-	if [[ "$__result1" == 0 ]] && [[ "$__result2" == 0 ]]; then
+	if [[ "${__result1}" == 0 ]] && [[ "${__result2}" == 0 ]]; then
     
 	    # Check if a new file is available
-    	    check_new_file_available $__arg1 $__arg2
+    	    check_new_file_available ${__arg1} ${__arg2}
 
     	    if [[ "$?" == 1 ]]; then
-		cp -v -f $__arg2 $__arg1
+		echo "Replacing the ${__arg1} version by ${__arg2}"
+		cp -f ${__arg2} ${__arg1}
 		return 0
     	    fi 
 	else
@@ -322,6 +334,48 @@ function replace_current_newer_file() {
 	return 2
     fi
 } # replace_current_newer_file
+
+function debian-update-clean() {
+
+    ## ----- head -----
+    ##
+    ## DESCRIPTION:
+    ##   Update packages, upgrade packages and auto-clean
+    ##   the installation of the stored packages
+    ##
+    ## ARGUMENTS:
+    ##   /
+    ##
+    ## GLOBAL VARIABLES USED:
+    ##   /
+    ##
+    ## EXIT CODE:
+    ##   0: if apt-get is existing
+    ##   1: if apt-get is not existing
+    ##   2: if the argument(s) is/are null or not specified
+    ##
+
+    ## ----- main -----
+
+    # Setup local variable within function
+    local __aptget="/usr/bin/apt-get"
+    
+    # Check if file is existing
+    check_file_exists ${__aptget}
+
+    # Storing result of the function
+    local __result1="$?"
+
+    # Updating; upgrading and cleaning the debian packages
+    if [[ "${__result1}" == 0 ]]; then
+	${__aptget} -y update 
+	${__aptget} -y upgrade 
+	${__aptget} -y autoclean 
+	return 0
+    else
+	return 1
+    fi
+} # debian-update-clean
 
 #####################################################################
 # Test function: if yes, then test otherwise don't test
@@ -371,10 +425,13 @@ function function_test() {
 ##
 #####################################################################
 
-function_test $FUNCTION_TO_TEST
+#function_test $FUNCTION_TO_TEST
 
-#replace_current_newer_file $CURRENT_PROFILE $NEWER_PROFILE
-#replace_current_newer_file $CURRENT_BASHLIBRARY $NEWER_BASHLIBRARY
+replace_current_newer_file ${CURRENT_BASHPROFILE} ${NEWER_BASHPROFILE}
+replace_current_newer_file ${CURRENT_PROFILE} ${NEWER_PROFILE}
+replace_current_newer_file ${CURRENT_BASHLIBRARY} ${NEWER_BASHLIBRARY}
+replace_current_newer_file ${CURRENT_BASHRC} ${NEWER_BASHRC}
+
 
 #check_dir_exists2 /etc
 #echo $?
