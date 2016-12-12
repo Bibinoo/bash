@@ -276,8 +276,41 @@ function check_new_file_available() {
 } # check_new_file_available()
 
 #####################################################################
+#
 # Others check (system update, file update ...)
+#
 #####################################################################
+function check_user_root() {
+
+    ## ----- head -----
+    ##
+    ## DESCRIPTION:
+    ##   Check the bash shell script is being run by root or not 
+    ##
+    ## ARGUMENTS:
+    ##   / 
+    ##
+    ## GLOBAL VARIABLES USED:
+    ##   /
+    ##
+    ## EXIT CODE:
+    ##   0: if the bash shell script is being run by root
+    ##   1: if the bash shell script is not being run by root
+    ##
+
+    ## ----- main -----
+
+    # If ${EUID} is equal to 0 then return 0 else 1
+    if [[ $EUID -eq 0 ]]; then
+	echo "This script is run as root"
+	return 0
+    else
+	echo "This script must be run as root"
+	return 1
+    fi
+
+} # check_user_root
+
 function replace_current_newer_file() {
 
     ## ----- head -----
@@ -301,7 +334,6 @@ function replace_current_newer_file() {
     ## ----- main -----
 
     # If 2 arg are existing and not null
-
     if [[ "$#" == 2 ]] && [[ -n "$1" ]] && [[ -n "$2" ]]; then
 	# Setup local variable within function
 	local __arg1="$1"
@@ -357,25 +389,40 @@ function debian-update-clean() {
 
     ## ----- main -----
 
+    # Checking if the script is run as root
+    check_user_root
+    # Storing result of the function
+    local __result1="$?"
+
     # Setup local variable within function
     local __aptget="/usr/bin/apt-get"
     
     # Check if file is existing
     check_file_exists ${__aptget}
-
     # Storing result of the function
-    local __result1="$?"
+    local __result2="$?"
 
-    # Updating; upgrading and cleaning the debian packages
-    if [[ "${__result1}" == 0 ]]; then
+    # If ${__aptget} is existing and script run as root then update
+    if [[ "${__result1}" == 0 ]] && [[ "${__result1}" == 0 ]]; then
+
+        # Updating; upgrading and cleaning the debian packages
+
 	${__aptget} -y update 
 	${__aptget} -y upgrade 
 	${__aptget} -y autoclean 
 	return 0
     else
+	echo "Exiting ..."
 	return 1
     fi
 } # debian-update-clean
+
+#####################################################################
+##
+## ----- Error message, logs...  -----
+##
+#####################################################################
+
 
 #####################################################################
 # Test function: if yes, then test otherwise don't test
