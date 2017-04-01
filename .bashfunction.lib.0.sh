@@ -1,8 +1,15 @@
 #!/bin/bash
 #set -E
 #set -x
-set +u
+
+# set -u : exit the script if you try to use an uninitialised variable
+set -o nounset
+#set +u
+
+# http://mywiki.wooledge.org/BashFAQ/105
+# Handle errors properly and do not rely on the unreliable set -e
 set +e
+
 #####################################################################
 # Global Variables
 #####################################################################
@@ -277,7 +284,7 @@ function check_new_file_available() {
 
 #####################################################################
 #
-# Others check (system update, file update ...)
+# ----- Others check (system update, file update ...) -----
 #
 #####################################################################
 function check_user_root() {
